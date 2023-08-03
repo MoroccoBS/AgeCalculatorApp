@@ -176,8 +176,14 @@ function App() {
         <Button onClick={handleClick}></Button>
         <div className="display-container">
           <Display label="Year" children={ageYear}></Display>
-          <Display label="Month" children={ageMonth}></Display>
-          <Display label="Day" children={ageDay}></Display>
+          <Display
+            label="Month"
+            children={ageMonth < 10 && ageMonth > 0 ? `0${ageMonth}` : ageMonth}
+          ></Display>
+          <Display
+            label="Day"
+            children={ageDay < 10 && ageDay > 0 ? `0${ageDay}` : ageDay}
+          ></Display>
         </div>
       </div>
     </>

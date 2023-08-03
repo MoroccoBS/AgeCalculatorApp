@@ -20,13 +20,14 @@
     background-color: var(--Smokey-Grey);
     right: 105%;
     bottom: 50%;
+    pointer-events: none;
   }
-  &:hover {
+  /* &:hover {
     background-color: var(--Off-Black);
     transition: all 0.2s ease-in-out;
     -webkit-transition: all;
     -moz-transition: all;
     -ms-transition: all;
     -o-transition: all;
-  }
+  } */
 }
