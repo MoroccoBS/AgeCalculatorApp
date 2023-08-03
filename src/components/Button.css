@@ -1,0 +1,32 @@
+.btn {
+  width: 10%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--Purple);
+  margin-left: 80%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 700%;
+    height: 0.1em;
+    background-color: var(--Smokey-Grey);
+    right: 105%;
+    bottom: 50%;
+  }
+  &:hover {
+    background-color: var(--Off-Black);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+  }
+}

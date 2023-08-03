@@ -1,0 +1,12 @@
+.display {
+  margin-left: 2em;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 800;
+  color: var(--Off-Black);
+  width: max-content;
+  & span {
+    color: var(--Purple);
+    margin-right: 0.1em;
+  }
+}
