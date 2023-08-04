@@ -172,7 +172,7 @@ function App() {
         <div className="inputContainer">
           <Input
             label="Day"
-            placeholder="MM"
+            placeholder="DD"
             error={dayError}
             value={dayValue}
             errorType={errorTypeDay}
@@ -181,7 +181,7 @@ function App() {
           ></Input>
           <Input
             label="Month"
-            placeholder="DD"
+            placeholder="MM"
             error={monthError}
             value={monthValue}
             errorType={errorTypeMonth}
