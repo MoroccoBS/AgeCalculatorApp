@@ -3,6 +3,9 @@
     font-size: 1rem;
     letter-spacing: 0.125em;
     text-transform: uppercase;
+    @media (max-width: 600px) {
+      font-size: 0.75rem;
+    }
   }
   position: relative;
   color: var(--Smokey-Grey);
@@ -16,6 +19,7 @@
     width: 70%;
     padding: 0.5em;
     font-size: 1.25rem;
+    font-weight: 700;
     border: solid 0.05em var(--Light-Grey);
     border-radius: 0.25em;
     -webkit-border-radius: 0.25em;
@@ -35,6 +39,9 @@
     }
     &::placeholder {
       font-weight: 700;
+    }
+    @media (max-width: 600px) {
+      font-size: 1rem;
     }
   }
 }

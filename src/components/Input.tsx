@@ -20,9 +20,6 @@ function Input({
   ErrorCheck,
   ErrorCheckYear,
 }: InputProps) {
-  // const ErrorHandling = () => {
-  //   return error && <p className="errorPop">{`${errorType} ${label}`}</p>;
-  // };
   return (
     <>
       <div className={error ? "input error" : "input"}>

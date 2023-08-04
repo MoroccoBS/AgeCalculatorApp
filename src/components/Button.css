@@ -1,5 +1,5 @@
 .btn {
-  width: 10%;
+  width: min-content;
   aspect-ratio: 1;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -12,15 +12,32 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   border: none;
+  z-index: 2;
+  padding: 0.5em;
+  & img {
+    width: 5em;
+  }
   &::before {
     content: "";
     position: absolute;
-    width: 700%;
+    width: 40vw;
     height: 0.1em;
     background-color: var(--Smokey-Grey);
     right: 105%;
     bottom: 50%;
     pointer-events: none;
+  }
+  @media (max-width: 600px) {
+    margin-left: 45%;
+    width: 4em;
+    height: 4em;
+    margin-top: 2em;
+    & img {
+      width: 90%;
+    }
+    &::before {
+      opacity: 0;
+    }
   }
   /* &:hover {
     background-color: var(--Off-Black);

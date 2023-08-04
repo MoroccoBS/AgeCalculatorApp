@@ -58,4 +58,7 @@ body {
   gap: 1em;
   font-size: 2rem;
   margin-top: 1em;
+  @media (max-width: 600px) {
+    font-size: 1.75rem;
+  }
 }

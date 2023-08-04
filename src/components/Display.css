@@ -9,4 +9,7 @@
     color: var(--Purple);
     margin-right: 0.1em;
   }
+  @media (max-width: 600px) {
+    margin-left: 1em;
+  }
 }
