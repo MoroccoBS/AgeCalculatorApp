@@ -136,8 +136,33 @@ function App() {
     RangeCheck(parseInt(dayValue), "Day");
     RangeCheck(parseInt(monthValue), "Month");
     RangeCheck(parseInt(yearValue), "Year");
-    if (dayValue !== "" && monthValue !== "" && yearValue !== "") {
+
+    // // Check if all error states have been updated
+    // const allErrorsUpdated =
+    //   dayValue !== "" &&
+    //   monthValue !== "" &&
+    //   yearValue !== "" &&
+    //   dayError === false &&
+    //   monthError === false &&
+    //   yearError === false;
+
+    // if (allErrorsUpdated) {
+    //   // Set the flag to indicate that range check is completed
+    //   const rangeCheckCompleted = true;
+
+    if (
+      dayValue !== "" &&
+      monthValue !== "" &&
+      yearValue !== "" &&
+      dayError === false &&
+      monthError === false &&
+      yearError === false
+    ) {
       CalculateAge();
+    } else {
+      setAgeDay(0);
+      setAgeMonth(0);
+      setAgeYear(0);
     }
   };
 
